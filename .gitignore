@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Downloaded automatically on first run (~8 MB)
+models/
+
+# Personal, machine-specific data
+calibration.json
+fatigue_log.csv
+drawings/
+*.tmp

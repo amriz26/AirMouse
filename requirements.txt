@@ -1,0 +1,10 @@
+# Python 3.10 or 3.11
+mediapipe==1.2.0            # Tasks API HandLandmarker (this version has no mp.solutions)
+opencv-contrib-python==5.0.0.93  # pulled in by mediapipe; provides cv2. Don't also install opencv-python.
+pyautogui==0.9.54
+numpy==2.4.6
+# Knob (VOLUME mode) backends. macOS volume uses the built-in osascript, so nothing to install.
+pycaw==20260927; sys_platform == "win32"                      # Windows volume
+comtypes==1.4.17; sys_platform == "win32"
+screen_brightness_control==0.27.2; sys_platform != "darwin"  # brightness: Windows/Linux only
+plyer==2.1.0; sys_platform == "win32"                        # Windows fatigue notifications (macOS: osascript, Linux: notify-send)
